@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>TraceWAM: Real Robot Videos</title>
+<style>
+  :root {
+    --bg: #fbfbf9;
+    --text: #1d2126;
+    --muted: #5c6670;
+    --rule: #dfe2e5;
+    --accent: #2f5d8a;
+    --frame: #e9ecef;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --bg: #15181c;
+      --text: #e6e8ea;
+      --muted: #9aa4ae;
+      --rule: #2c3238;
+      --accent: #8ab4dc;
+      --frame: #1f2429;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  main {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+  }
+  header { border-bottom: 1px solid var(--rule); padding-bottom: 28px; margin-bottom: 40px; }
+  h1 {
+    font-size: clamp(2rem, 5vw, 2.8rem);
+    line-height: 1.15;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 0 0 10px;
+  }
+  .sub { color: var(--muted); margin: 0; }
+  .anon {
+    display: inline-block;
+    margin-top: 18px;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: 4px 10px;
+  }
+  h2 {
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin: 0 0 6px;
+  }
+  .condition p { margin: 0 0 18px; color: var(--muted); max-width: 70ch; }
+  figure { margin: 0; }
+  video {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    background: var(--frame);
+    border-radius: 6px;
+  }
+  figcaption {
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 8px;
+  }
+  .condition + .condition { margin-top: 56px; }
+  footer {
+    margin-top: 64px;
+    padding-top: 20px;
+    border-top: 1px solid var(--rule);
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>TraceWAM: Real Robot Experiments</h1>
+    <p class="sub">Supplementary videos for the anonymous submission.</p>
+    <span class="anon">Anonymous for double-blind review</span>
+  </header>
+
+  <section class="condition" id="displaced">
+    <h2>Displaced condition</h2>
+    <p>The bowl is moved by hand while the robot is transporting the block. Videos are uncut and play at 1× speed.</p>
+    <figure>
+      <video src="videos/displaced_trial01.mp4" controls muted playsinline preload="metadata"></video>
+      <figcaption>Trial 1 (36 s, uncut, 1× speed)</figcaption>
+    </figure>
+  </section>
+
+  <footer>
+    All videos are unedited recordings of the real robot. Author information is withheld for review.
+  </footer>
+</main>
+</body>
+</html>
